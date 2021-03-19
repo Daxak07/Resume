@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: DM Sans;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    overflow: hidden;
+    background-color: #f4a11c;
+}
+
+h1 {
+    font-size: 43px;
+    font-family: 'Poppins', sans-serif;
+}
+
+span {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 90px;
+    overflow-y: hidden;
+    position: fixed;
+}
+
+.logo h1 {
+    font-size: 30px;
+    color: #e25822;
+}
+
+.navigation {
+    transition: all 0.6s ease-in-out;
+}
+
+.navigation ul {
+    display: flex;
+}
+
+.navigation ul li {
+    list-style: none;
+    margin-right: 24px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #242d52;
+    padding: 16px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 900;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    opacity: 0.6;
+}
+
+.fixed {
+    background-color: rgba(244, 161, 28);
+    border-bottom: 1px solid #e25822;
+}
+
+.navigation.active {
+    left: 0;
+    margin-top: 10px;
+}
+
+.burger {
+    display: none;
+}
+
+.line {
+    width: 40px;
+    height: 7px;
+    background: #e25822;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 0 10px 0 70px;
+        position: unset;
+    }
+
+    .navigation {
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: 55%;
+        background-color: #e25822;
+    }
+
+    .navigation ul {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navigation ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navigation ul li a {
+        font-size: 29px;
+        display: block;
+        color: #fff;
+    }
+
+    .logo h1 {
+        margin-top: 10px;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+}
+
+.main-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 150px;
+    margin-top: 150px;
+    grid-gap: 150px;
+}
+
+.header-main-content-h1 {
+    font-size: 63px;
+    color: #242d52;
+}
+
+.header-main-content-h1 span {
+    color: #e25822;
+}
+
+.header-content button, form button {
+    padding: 12px 35px;
+    background-color: #e25822;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border-radius: 100px;
+    transition: all 0.3s;
+}
+
+.cta {
+    margin-top: 20px;
+}
+
+.cta:hover {
+    opacity: 0.6;
+}
+
+@media only screen and (max-width:900px ) {
+    .main-header {
+        grid-template-columns: 1fr;
+        margin-left: auto;
+        margin-top: 90px;
+        grid-gap: 60px;
+        text-align: center;
+    }
+
+    .header-main-content-h1 {
+        font-size: 43px;
+    }
+}
+
+.about-section {
+    margin-top: 150px;
+}
+
+.about-head {
+    text-align: center;
+}
+
+.about-head h1 {
+    color: #e25822;
+    font-size: 53px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 60px;
+
+}
+
+.about img {
+    border-radius: 10px;
+}
+
+.about h1 {
+    font-size: 53px;
+    font-weight: 900;
+    color: #e25822;
+}
+
+.about p {
+    font-size: 21px;
+    color: red;
+}
+
+@media only screen and (max-width: 900px) {
+    .about {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+    }
+
+    .about h1 {
+        font-size: 43px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+}
+
+.skills .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills h1 {
+    color: #e25822;
+    font-size: 53px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.skills p {
+    font-size: 18px;
+    color: red;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills-content .right .html::before{
+    width: 90%;
+}
+.skills-content .right .css::before{
+    width: 60%;
+}
+.skills-content .right .js::before{
+    width: 80%;
+}
+.skills-content .right .php::before{
+    width: 50%;
+}
+.skills-content .right .mysql::before{
+    width: 70%;
+}
+
+@media only screen and (max-width: 900px) {
+    .skills .skills-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+.contact-head {
+    text-align: center;
+    color: #e25822;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container {
+    background-color: #e25822;
+    width: 400px;
+    margin: 80px auto;
+    margin-bottom: 140px;
+    border-radius: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    padding: 70px 30px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"] {
+    height: 40px;
+    font-size: 16px;
+    padding-left: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+label {
+    font-size: 23px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+textarea {
+    resize: none;
+    font-size: 16px;
+    padding: 6px 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+}
+
+input[type="submit"] {
+    padding: 10px 50px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 40px;
+    background-color: #fff;
+    color: #e25822;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        width: 350px;
+        margin: 50px auto 90px auto;
+    }
+}

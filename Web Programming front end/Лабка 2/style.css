@@ -1,0 +1,165 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+
+body {
+    margin: 0 auto;;
+    min-width: 1000px;
+}
+
+/* Header
+=================*/
+
+.header__links {
+    width: 100%;
+    max-width: 950px;
+    margin-left: 200px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.header__link {
+    color: #000000;
+    margin-left: 20px;
+    text-decoration: none;
+    opacity: .75;
+}
+
+.header__link:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+/* Intro
+=================*/
+
+.intro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 560px;
+    background: #34344e
+    url("b1.jpg") center no-repeat ;
+    background-size: cover;
+
+}
+.intro__logo {
+    color: #fff;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro__title {
+    font-size: 80px;
+    margin-bottom: 80px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.intro__subtitle {
+    font-size: 25px;
+    font-family: 'Grandstander', cursive;
+    line-height: 1.5;
+    border: 1px solid white;
+    width:800px;
+    margin-left: 275px;
+    padding: 10px;
+
+}
+
+.btn {
+    margin-top: 20px;
+    width: 120px;
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: regular;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ .card {
+     height: 350px;
+     text-align: center;
+     margin-left: 70px;
+
+ }
+
+ .card-img-top {
+     height: 150px;
+     width: 200px;
+     height: 200px;
+ }
+
+ .card__title {
+     font-weight: bold;
+     font-size: 25px;
+     text-align: center;
+ }
+
+.card__subtitle {
+    font-size: 12px;
+    text-align: center;
+}
+
+.btn-outline-primary {
+    margin-left: 40px;
+}
+
+
+.footer {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    color: white;
+    text-align: left;
+    font-size: 25px;
+}
+
+p {
+    margin: 20px 0 0 20px;
+    width: 30px;
+    font-size: 10px;
+
+}
+
+abbr {
+    text-decoration: none;
+}
+
+p.questions {
+    width: 50%;
+    margin: 0;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+
+address {
+    font-size: 15px;
+    position: absolute;
+    top: 1450px;
+    right: 30px;
+}
